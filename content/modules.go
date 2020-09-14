@@ -224,26 +224,31 @@ var modules = []module{
 			"[image data](https://www.youtube.com/watch?v=UhDlL-tLT2U&list=PLuh62Q4Sv7BUf60vkjePfcOQc8sHxmnDX)",
 			"[pillow image processing](https://pillow.readthedocs.io/en/stable/handbook/tutorial.html)",
 		},
-		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessment_instance/1700831/",
+		HomeworkURL: "homework5",
 		LiveMeetingTopics: []string{
 			"Practice and Discussion",
 			"",
 		},
 	},
 	{
-		Number:     5,
-		NumDays:    7,
-		Parents:    []int64{3, 4},
-		Title:      "Exploratory data analysis (EDA)",
-		Overview:   "The first step in a data science project is getting a feel for the dataset you are working with. This is called Exploratory Data Analysis (EDA).",
-		Objectives: []string{"Students will learn how to explore and process an unfamiliar dataset."},
-		Readings: []string{
-			"Watch mlcourse.ai video lectures on [exploratory data analysis](https://youtu.be/fwWCw_cE5aI) and [visualization](https://www.youtube.com/watch?v=WNoQTNOME5g)",
-			"Work through accompanying notebooks [1](https://mlcourse.ai/articles/topic1-exploratory-data-analysis-with-pandas/), [2.1](https://mlcourse.ai/articles/topic2-visual-data-analysis-in-python/) and [2.2](https://mlcourse.ai/articles/topic2-part2-seaborn-plotly/)",
+		Number:   5,
+		NumDays:  7,
+		Parents:  []int64{3, 4},
+		Title:    "Exploratory data analysis (EDA)",
+		Overview: "The first step in a data science project is getting a feel for the dataset you are working with. This is called Exploratory Data Analysis (EDA).",
+		Objectives: []string{
+			"Calculate relevant statistical properties of an unfamiliar dataset",
+			"Visualize an unfamiliar dataset and describe its relevant properties",
 		},
+		Readings: []string{
+			"[Exploratory Data Analysis](https://www.youtube.com/watch?v=zHcQPKP6NpM)",
+			"[Exploratory Data Analysis in Pandas](https://youtu.be/WNoQTNOME5g?t=480) watch time 8:00 to 20:30",
+			"mlcourse.ai notebooks [1](https://mlcourse.ai/articles/topic1-exploratory-data-analysis-with-pandas/), [2.1](https://mlcourse.ai/articles/topic2-visual-data-analysis-in-python/) and [2.2](https://mlcourse.ai/articles/topic2-part2-seaborn-plotly/)",
+		},
+		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessment_instance/1757363",
 		LiveMeetingTopics: []string{
-			"Lecture: Statistics review",
-			"EDA group exercises",
+			"Practice problems",
+			"Practice project EDA",
 		},
 		ProjectAssignment:     `Project exploratory data analysis`,
 		ProjectAssignmentDays: 17,
@@ -512,6 +517,10 @@ func assignmentDeadline(m module, dates map[int64]time.Time) time.Time {
 	return nextLecture(dates[m.ID()].Add(time.Duration(m.ProjectAssignmentDays) * 24 * time.Hour))
 }
 
+func stringToLink(s string) string {
+	return strings.Replace(strings.Replace(strings.Replace(strings.ToLower(s), " ", "-", -1), "(", "", -1), ")", "", -1)
+}
+
 func main() {
 	dates := startDates(modules)
 
@@ -544,10 +553,10 @@ func main() {
 			return assignmentDeadline(m, dates).Format(dateFormat)
 		},
 		"ModuleLink": func(m module) string {
-			return strings.Replace(strings.ToLower(m.Title), " ", "-", -1)
+			return stringToLink(m.Title)
 		},
 		"StringLink": func(s string) string {
-			return strings.Replace(strings.ToLower(s), " ", "-", -1)
+			return stringToLink(s)
 		},
 	}
 
@@ -771,7 +780,7 @@ func (m module) assignmentToCalendar(srv *calendar.Service, dates map[int64]time
 	}
 	_, err := srv.Events.Insert(calendarID, &calendar.Event{
 		Summary:     "Project Activity Assigned",
-		Description: fmt.Sprintf("<a href=https://uiceds.github.io/syllabus/#%s>%s</a>", strings.Replace(strings.ToLower(m.ProjectAssignment), " ", "-", -1), m.ProjectAssignment),
+		Description: fmt.Sprintf("<a href=https://uiceds.github.io/syllabus/#%s>%s</a>", stringToLink(m.ProjectAssignment), m.ProjectAssignment),
 		Status:      "confirmed",
 		Start: &calendar.EventDateTime{
 			Date: moduleStart(m, dates).Format("2006-01-02"),
@@ -784,7 +793,7 @@ func (m module) assignmentToCalendar(srv *calendar.Service, dates map[int64]time
 
 	_, err = srv.Events.Insert(calendarID, &calendar.Event{
 		Summary:     "Project Activity Due",
-		Description: fmt.Sprintf("<a href=https://uiceds.github.io/syllabus/#%s>%s</a>", strings.Replace(strings.ToLower(m.ProjectAssignment), " ", "-", -1), m.ProjectAssignment),
+		Description: fmt.Sprintf("<a href=https://uiceds.github.io/syllabus/#%s>%s</a>", stringToLink(m.ProjectAssignment), m.ProjectAssignment),
 		Status:      "confirmed",
 		Start: &calendar.EventDateTime{
 			DateTime: assignmentDeadline(m, dates).Add(-time.Hour).Format(time.RFC3339),
