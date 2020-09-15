@@ -226,7 +226,7 @@ var modules = []module{
 		},
 		HomeworkURL: "homework5",
 		LiveMeetingTopics: []string{
-			"Practice and Discussion",
+			"Group exercises [slides](https://docs.google.com/presentation/d/1SlC4bTehrP4cFuaSv36IMovJU24BMFbyEJthm8eooio/edit?usp=sharing)",
 			"",
 		},
 	},
