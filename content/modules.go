@@ -224,10 +224,10 @@ var modules = []module{
 			"[image data](https://www.youtube.com/watch?v=UhDlL-tLT2U&list=PLuh62Q4Sv7BUf60vkjePfcOQc8sHxmnDX)",
 			"[pillow image processing](https://pillow.readthedocs.io/en/stable/handbook/tutorial.html)",
 		},
-		HomeworkURL: "homework5",
+		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessment_instance/1700831",
 		LiveMeetingTopics: []string{
 			"Group exercises [slides](https://docs.google.com/presentation/d/1SlC4bTehrP4cFuaSv36IMovJU24BMFbyEJthm8eooio/edit?usp=sharing)",
-			"",
+			"[Guided exercise](https://www.kaggle.com/christophertessum/module-4-class-2-exercise-1/) and [group exercise](https://www.kaggle.com/christophertessum/module-4-class-2-exercise-2/)",
 		},
 	},
 	{
