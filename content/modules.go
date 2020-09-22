@@ -227,7 +227,7 @@ var modules = []module{
 		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessment_instance/1700831",
 		LiveMeetingTopics: []string{
 			"Group exercises [slides](https://docs.google.com/presentation/d/1SlC4bTehrP4cFuaSv36IMovJU24BMFbyEJthm8eooio/edit?usp=sharing)",
-			"[Guided exercise](https://www.kaggle.com/christophertessum/module-4-class-2-exercise-1/) and [group exercise](https://www.kaggle.com/christophertessum/module-4-class-2-exercise-2/)",
+			"[Guided exercise](https://www.kaggle.com/christophertessum/module-4-class-2-exercise-1-result) and [group exercise](https://www.kaggle.com/christophertessum/module-4-class-2-exercise-2-result)",
 		},
 	},
 	{
@@ -247,8 +247,8 @@ var modules = []module{
 		},
 		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessment_instance/1757363",
 		LiveMeetingTopics: []string{
-			"Practice problems",
-			"Practice project EDA",
+			"Practice project EDA (Notebook)[https://www.kaggle.com/christophertessum/module-5-class-1-airplanes-result]",
+			"Image processing",
 		},
 		ProjectAssignment:     `Project exploratory data analysis`,
 		ProjectAssignmentDays: 17,
@@ -257,21 +257,23 @@ var modules = []module{
 		Number:  6,
 		Parents: []int64{3, 5},
 		NumDays: 7,
-		Title:   "Spatial data",
-		Overview: `Spatial and Geospatial data are common in Civil and Environmental Engineering,
-but less common in other disciplines that use data science. In this module we will learn
-how to work with these types of data.`,
-		Objectives: []string{"Students will learn about processing spatial data, which is common in physical data science"},
+		Title:   "Network analysis",
+		Overview: `In the previous module we learned how to do exploratory data analysis for tabular data. 
+This week we will work on exploratory data analysis for graph (network) data.`,
+		Objectives: []string{
+			"Load and manipulate graph data using the `networkx` python library",
+			"Perform basic statistical analysis of graph data",
+		},
 		Readings: []string{
-			"Recorded lecture on raster vs. vector formats",
-			"Recorded lecture on joins and boolean operations",
-			"[geopandas tutorial](https://github.com/geopandas/scipy2018-geospatial-data)",
+			"[Game of Thrones: Network Analysis](https://www.kaggle.com/mmmarchetti/game-of-thrones-network-analysis)",
+			"[Networkx introduction](https://networkx.github.io/documentation/stable/reference/introduction.html)",
+			"Networkx [betweenness centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.betweenness_centrality.html#networkx.algorithms.centrality.betweenness_centrality), [degree centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.degree_centrality.html#networkx.algorithms.centrality.degree_centrality), and [shortest path](https://networkx.github.io/documentation/stable/reference/algorithms/shortest_paths.html)",
 		},
 		LiveMeetingTopics: []string{
 			"",
 			"",
 		},
-		HomeworkURL: "SpatialDataHomework",
+		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessments",
 	},
 	{
 		Number:     7,
