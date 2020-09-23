@@ -450,6 +450,16 @@ func nextLecture(t time.Time) time.Time {
 	}
 }
 
+func nextSundayNight(t time.Time) time.Time {
+	d := t
+	for {
+		d = d.Add(24 * time.Hour)
+		if w := d.Weekday(); w == time.Sunday {
+			return time.Date(d.Year(), d.Month(), d.Day(), 23, 59, 59, 0, d.Location())
+		}
+	}
+}
+
 func nextOfficeHour(t time.Time) time.Time {
 	d := t
 	for {
@@ -487,6 +497,13 @@ func discussionResponseDeadline(m module, dates map[int64]time.Time) time.Time {
 	}
 	return d
 }
+func classSession(m module, dates map[int64]time.Time, num int) time.Time {
+	d := nextLecture(dates[m.ID()])
+	for i := 0; i < num; i++ {
+		d = nextLecture(d)
+	}
+	return d
+}
 func homeworkAssigned(m module, dates map[int64]time.Time) time.Time {
 	d := dates[m.ID()].Add(-7 * 24 * time.Hour)
 	if d.Before(startDate) {
@@ -502,16 +519,16 @@ func homeworkDeadline1(m module, dates map[int64]time.Time) time.Time {
 	return d
 }
 func homeworkDeadline2(m module, dates map[int64]time.Time) time.Time {
-	d := nextLecture(nextLecture(dates[m.ID()]))
+	d := nextSundayNight(nextLecture(dates[m.ID()]))
 	for i := 0; i < m.HomeworkDelay; i++ {
-		d = nextLecture(d)
+		d = nextSundayNight(d)
 	}
 	return d
 }
 func homeworkDeadline3(m module, dates map[int64]time.Time) time.Time {
-	d := nextLecture(dates[m.ID()].Add(14 * 24 * time.Hour))
+	d := nextSundayNight(dates[m.ID()].Add(14 * 24 * time.Hour))
 	for i := 0; i < m.HomeworkDelay; i++ {
-		d = nextLecture(d)
+		d = nextSundayNight(d)
 	}
 	return d
 }
@@ -553,6 +570,9 @@ func main() {
 		},
 		"AssignmentDeadline": func(m module) string {
 			return assignmentDeadline(m, dates).Format(dateFormat)
+		},
+		"ClassSession": func(m module, n int) string {
+			return classSession(m, dates, n).Format(dateFormat)
 		},
 		"ModuleLink": func(m module) string {
 			return stringToLink(m.Title)

@@ -106,9 +106,11 @@ General information about homework assignments is [here](#homeworks-and-exams).
 {{if .LiveMeetingTopics -}}
 #### Module {{.Number}} Topics for Zoom Meetings
 
-{{range .LiveMeetingTopics}}* {{.}}
+{{with $mod := .}}
+{{range $index, $element := .LiveMeetingTopics}}* {{ClassSession $mod $index}}: {{$element}}
 {{end}}
 {{- end}}
+{{end}}
 
 {{if .ProjectAssignment}}
 #### Module {{.Number}} Project Assignment
