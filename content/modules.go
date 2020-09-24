@@ -247,8 +247,8 @@ var modules = []module{
 		},
 		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessment_instance/1757363",
 		LiveMeetingTopics: []string{
-			"Practice project EDA (Notebook)[https://www.kaggle.com/christophertessum/module-5-class-1-airplanes-result]",
-			"Image processing",
+			"Practice project EDA [Notebook](https://www.kaggle.com/christophertessum/module-5-class-1-airplanes-result)",
+			"Image processing [Notebook](https://www.kaggle.com/christophertessum/module-5-class-2-ships-result)",
 		},
 		ProjectAssignment:     `Project exploratory data analysis`,
 		ProjectAssignmentDays: 17,
