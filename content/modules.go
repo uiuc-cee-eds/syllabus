@@ -276,20 +276,26 @@ This week we will work on exploratory data analysis for graph (network) data.`,
 		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessments",
 	},
 	{
-		Number:     7,
-		Parents:    []int64{6},
-		NumDays:    7,
-		Title:      "Spatial statistics",
-		Overview:   "",
-		Objectives: []string{"Students will learn how to perform statistical analysis of spatial data."},
+		Number:  7,
+		Parents: []int64{6},
+		NumDays: 7,
+		Title:   "Spatial data",
+		Overview: `Many Civil and Environmental Engineering analyses—for example transportation networks or environmental data—have 
+a spatial component. This week we will work with spatial data.`,
+		Objectives: []string{
+			"Analyze raster (gridded) data using the XArray library",
+			"Analyze vector (point, line, or polygon) data using the GeoPandas library",
+		},
 		Readings: []string{
-			"Recorded Lecture:  Spatial statistics (spatial autocorrelation, Modifiable areal unit problem, kriging)",
-			"[PySAL library](https://pysal.org/) and [notebooks](http://pysal.org/notebooks/intro)",
+			"[Xarray tutorial](https://www.youtube.com/playlist?list=PLTJsu1ustEMbVgE6SivbF17XvWmb3hqoR) videos 1–8",
+			"[Intro to Geopandas](https://www.youtube.com/playlist?list=PLewNEVDy7gq3DjrPDxGFLbHE4G2QWe8Qh) videos 1, 3–14 (video 2 is installation, which you can do with anaconda)",
+			"(In these and all video lectures, you can adjust the playback speed by clicking 'Settings' in the lower-right corner of the playback window.)",
 		},
 		LiveMeetingTopics: []string{
 			"",
 			"",
 		},
+		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessment_instance/1837345",
 	},
 	{
 
