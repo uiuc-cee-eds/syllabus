@@ -270,7 +270,7 @@ This week we will work on exploratory data analysis for graph (network) data.`,
 			"Networkx [betweenness centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.betweenness_centrality.html#networkx.algorithms.centrality.betweenness_centrality), [degree centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.degree_centrality.html#networkx.algorithms.centrality.degree_centrality), and [shortest path](https://networkx.github.io/documentation/stable/reference/algorithms/shortest_paths.html)",
 		},
 		LiveMeetingTopics: []string{
-			"",
+			"Network analysis exercise ([Notebook](https://www.kaggle.com/christophertessum/module-6-class-1-airplanes))",
 			"",
 		},
 		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessments",
