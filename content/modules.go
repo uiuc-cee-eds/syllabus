@@ -287,7 +287,7 @@ a spatial component. This week we will work with spatial data.`,
 			"Analyze vector (point, line, or polygon) data using the GeoPandas library",
 		},
 		Readings: []string{
-			"[Xarray tutorial](https://www.youtube.com/playlist?list=PLTJsu1ustEMbVgE6SivbF17XvWmb3hqoR) videos 1–8",
+			"[Xarray tutorial](https://www.youtube.com/playlist?list=PLTJsu1ustEMbVgE6SivbF17XvWmb3hqoR) videos 1–8. If you want to follow along, the link to the dataset they use in the video is broken, but there is another copy [here](https://esgf.nci.org.au/thredds/fileServer/master/CMIP5/output1/CSIRO-BOM/ACCESS1-3/historical/mon/atmos/Amon/r1i1p1/v20120413/tas/tas_Amon_ACCESS1-3_historical_r1i1p1_185001-200512.nc)",
 			"[Intro to Geopandas](https://www.youtube.com/playlist?list=PLewNEVDy7gq3DjrPDxGFLbHE4G2QWe8Qh) videos 1, 3–14 (video 2 is installation, which you can do with anaconda)",
 			"(In these and all video lectures, you can adjust the playback speed by clicking 'Settings' in the lower-right corner of the playback window.)",
 		},
