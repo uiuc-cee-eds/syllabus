@@ -293,7 +293,7 @@ a spatial component. This week we will work with spatial data.`,
 		},
 		LiveMeetingTopics: []string{
 			"Geopandas ([Notebook](https://www.kaggle.com/christophertessum/module-7-class-1-airplanes-result))",
-			"Xarray ([Notebook](https://www.kaggle.com/christophertessum/module-7-class-2-ds4g))",
+			"Xarray ([Notebook](https://www.kaggle.com/christophertessum/module-7-class-2-ds4g-result))",
 		},
 		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessment_instance/1837345",
 	},
