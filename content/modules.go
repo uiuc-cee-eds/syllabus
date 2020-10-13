@@ -298,7 +298,6 @@ a spatial component. This week we will work with spatial data.`,
 		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessment_instance/1837345",
 	},
 	{
-
 		Number:     8,
 		Parents:    []int64{2, 7},
 		NumDays:    7,
@@ -307,8 +306,8 @@ a spatial component. This week we will work with spatial data.`,
 		Objectives: []string{"Access, characterize, and visualize the data for their projects"},
 		Readings:   []string{},
 		LiveMeetingTopics: []string{
-			"Midterm course eval, project Kaggle competition, visualizations",
-			"Midterm Exam",
+			"Midterm course eval, project questions, visualizations",
+			"Midterm Exam and project support",
 		},
 		ProjectAssignment:     `Project Kaggle Competition`,
 		ProjectAssignmentDays: 40,
@@ -320,7 +319,7 @@ a spatial component. This week we will work with spatial data.`,
 		Title:    "Intro to machine learning",
 		Overview: "This week we will cover the basics of machine learning, including gradient descent, generalization, representation, and regularization.",
 		Objectives: []string{
-			"Learn and apply fundamental machine learning concepts",
+			"apply fundamental machine learning concepts",
 		},
 		Readings: []string{
 			"[Google machine learning crash course](https://developers.google.com/machine-learning/crash-course), starting with 'Introduction to ML' and ending after 'Regularization: Sparsity'",
