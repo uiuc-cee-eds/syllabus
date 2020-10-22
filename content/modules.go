@@ -326,7 +326,7 @@ a spatial component. This week we will work with spatial data.`,
 		},
 		LiveMeetingTopics: []string{
 			"Linear regression ([Notebook](https://www.kaggle.com/christophertessum/module-9-class-1-airplanes))",
-			"",
+			"Linear regression part 2 ([Notebook](https://www.kaggle.com/christophertessum/module-9-class-2-airplanes))",
 		},
 		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessment_instance/1924211/",
 	},
@@ -343,7 +343,7 @@ a spatial component. This week we will work with spatial data.`,
 		Readings: []string{
 			"[Google machine learning crash course](https://developers.google.com/machine-learning/crash-course), starting with 'Logistic Regression' and ending after 'Training Neural Nets'",
 		},
-		HomeworkURL: "DeepLearningHomework",
+		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessments",
 		LiveMeetingTopics: []string{
 			"",
 			"",
