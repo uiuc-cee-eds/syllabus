@@ -533,7 +533,7 @@ func homeworkDeadline3(m module, dates map[int64]time.Time) time.Time {
 	return d
 }
 func assignmentDeadline(m module, dates map[int64]time.Time) time.Time {
-	return nextLecture(dates[m.ID()].Add(time.Duration(m.ProjectAssignmentDays) * 24 * time.Hour))
+	return nextSundayNight(dates[m.ID()].Add(time.Duration(m.ProjectAssignmentDays) * 24 * time.Hour))
 }
 
 func stringToLink(s string) string {
