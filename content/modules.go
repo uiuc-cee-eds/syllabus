@@ -345,8 +345,8 @@ a spatial component. This week we will work with spatial data.`,
 		},
 		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessments",
 		LiveMeetingTopics: []string{
-			"",
-			"",
+			"Neural Networks ([Notebook](https://www.kaggle.com/christophertessum/module-10-class-1-airplanes))",
+			"Regularization ([Notebook](https://www.kaggle.com/christophertessum/module-10-class-2-regularization))",
 		},
 	},
 	{
