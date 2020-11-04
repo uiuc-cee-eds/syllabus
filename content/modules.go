@@ -376,9 +376,10 @@ a spatial component. This week we will work with spatial data.`,
 		Parents:  []int64{10, 11},
 		NumDays:  7,
 		Title:    "Neural Networks for Sequences",
-		Overview: "",
+		Overview: "Time series data are common in civil and environmental engineering, and machine learning can be used to make future predictions, for example for weather and pollution forecasts and predictions of mechanical failure.",
 		Objectives: []string{
-			"Students will learn about deep learning, the opportunities and drawbacks it presents, and applications to environmental problems.",
+			"Create recurrent neural networks for time series predictions",
+			"Apply recurrent neural networks to answer questions related to CEE",
 		},
 		Readings: []string{
 			"[An illustrated guide to recurrent neural networks](https://youtu.be/LHXXI4-IEns)",
