@@ -443,9 +443,9 @@ a spatial component. This week we will work with spatial data.`,
 		Readings:    []string{},
 		HomeworkURL: "",
 		LiveMeetingTopics: []string{
-			"",
-			"",
-			"",
+			"Project presentations",
+			"Project presentations",
+			"Project presentations",
 		},
 	},
 }
