@@ -1,3 +1,25 @@
 ---
 title: "CEE 498DS: Data Science for CEE, Fall 2020"
 lang: en-US
+<<<<<<< HEAD
+=======
+authors:
+  - github: johndoe
+    name: John Doe
+    initials: JD
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: johndoe
+    email: john.doe@something.com
+    affiliations:
+      - Department of Something, University of Whatever
+    funders:
+      - Grant XXXXXXXX
+  - github: janeroe
+    name: Jane Roe
+    initials: JR
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Something, University of Whatever
+      - Department of Whatever, University of Something
+>>>>>>> aaefe9a4ffca65d1bbfccb6a3d7567b84888b5ef

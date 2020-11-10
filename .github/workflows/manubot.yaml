@@ -12,7 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
+<<<<<<< HEAD
       SPELLCHECK: false
+=======
+      SPELLCHECK: true
+>>>>>>> aaefe9a4ffca65d1bbfccb6a3d7567b84888b5ef
     steps:
       - name: Set Environment Variables
         run: |
@@ -36,7 +40,11 @@ jobs:
       - name: Render modules
         run: cd content/ && go get && go run modules.go && cd ../
       - name: Install Environment
+<<<<<<< HEAD
         uses: conda-incubator/setup-miniconda@v2
+=======
+        uses: conda-incubator/setup-miniconda@v1
+>>>>>>> aaefe9a4ffca65d1bbfccb6a3d7567b84888b5ef
         with:
           activate-environment: manubot
           environment-file: build/environment.yml
