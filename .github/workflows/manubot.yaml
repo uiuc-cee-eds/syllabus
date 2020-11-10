@@ -17,7 +17,7 @@ jobs:
         run: |
           TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
           TRIGGERING_SHA_7=${TRIGGERING_SHA::7}
-          echo "{TRIGGERING_SHA_7}={$TRIGGERING_SHA_7} >> $GITHUB_ENV
+          echo "{TRIGGERING_SHA_7}={$TRIGGERING_SHA_7}" >> $GITHUB_ENV
           echo "TRIGGERING_SHA: $TRIGGERING_SHA"
       - name: Checkout Repository
         uses: actions/checkout@v2
