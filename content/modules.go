@@ -415,7 +415,7 @@ a spatial component. This week we will work with spatial data.`,
 		},
 		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessment_instance/2065426",
 		LiveMeetingTopics: []string{
-			"",
+			"Random forests ([Notebook](https://www.kaggle.com/christophertessum/module-13-class-1))",
 			"",
 		},
 	},
