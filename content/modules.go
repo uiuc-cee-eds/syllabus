@@ -310,7 +310,7 @@ a spatial component. This week we will work with spatial data.`,
 			"Midterm Exam and project support",
 		},
 		ProjectAssignment:     `Project Kaggle Competition`,
-		ProjectAssignmentDays: 40,
+		ProjectAssignmentDays: 47,
 	},
 	{
 		Number:   9,
