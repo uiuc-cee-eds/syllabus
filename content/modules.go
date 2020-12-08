@@ -366,7 +366,7 @@ a spatial component. This week we will work with spatial data.`,
 		HomeworkURL: "https://prairielearn.engr.illinois.edu/pl/course_instance/89830/assessment_instance/1993504",
 		LiveMeetingTopics: []string{
 			"Remember to vote! ([class canceled](https://education.illinois.edu/about/news-events/news/article/2020/07/15/statewide-election-day-holiday-no-classes-on-tuesday,-november-3,-2020))",
-			"Convolutional Neural Networks ([Notebook](https://www.kaggle.com/christophertessum/module-11-class-1-cars-result))",
+			"Convolutional Neural Networks ([Notebook](https://www.kaggle.com/christophertessum/homework-11-result))",
 		},
 		ProjectAssignment:     `Project Group Final Presentation`,
 		ProjectAssignmentDays: 24,
